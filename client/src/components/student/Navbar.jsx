@@ -48,10 +48,14 @@ const Navbar = () => {
 						</>
 					)}
 				</div>
-        
-				<button>
+
+				{
+					user? <UserButton/>: 
+				<button onClick={()=>openSignIn()}>
 					<img src={assets.user_icon} />
 				</button>
+				}
+        
 			</div>
 		</div>
 	);
