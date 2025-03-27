@@ -2,5 +2,9 @@
     "prettier.singleAttributePerLine": true,
     "prettier.useTabs": true,
     "prettier.withNodeModules": true,
-    "prettier.vueIndentScriptAndStyle": true
+    "prettier.vueIndentScriptAndStyle": true,
+    "cSpell.words": [
+        "svix",
+        "whook"
+    ]
 }
