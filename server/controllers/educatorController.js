@@ -82,7 +82,7 @@ export const educatorDashboardData=async(req,res)=>{
                 _id:{$in: course.enrolledStudents}
             }, 'name imageUrl')
 
-            students.forEach(element => {
+            students.forEach(student => {
                 enrolledStudentsData.push({
                     courseTitle:course.courseTitle,
                     student
