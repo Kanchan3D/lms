@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 
 const lectureSchema=new mongoose.Schema({
-    lectureId:{type:Number, require:true},
+    lectureId:{type:String, require:true},
     lectureTitle:{type:String, require:true},
     lectureDuration:{type:Number, require:true},
     lectureUrl:{type:String, require:true},
