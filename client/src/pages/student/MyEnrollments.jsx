@@ -3,6 +3,7 @@ import { AppContext } from "../../context/AppContext";
 import { Line } from "rc-progress";
 import Footer from "../../components/student/Footer";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const MyEnrollments = () => {
 	const {
@@ -20,7 +21,7 @@ const MyEnrollments = () => {
 
 	const getCourseProgress = async () => {
 		try {
-			const token = await getToken;
+			const token = await getToken();
 			const tempProgressArray = await Promise.all(
 				enrolledCourses.map(async (course) => {
 					const { data } = await axios.post(

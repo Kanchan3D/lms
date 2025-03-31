@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { assets, dummyStudentEnrolled } from "../../assets/assets";
 import Loading from '../../components/student/Loading';
 import { AppContext } from '../../context/AppContext';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const StudentsEnrolled = () => {
   const {backendUrl, getToken, isEducator}=useContext(AppContext)

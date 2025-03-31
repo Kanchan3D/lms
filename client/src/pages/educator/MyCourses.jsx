@@ -17,7 +17,7 @@ const MyCourses = () => {
 		} catch (error) {
 			toast.error(error.message)
 		}
-		setCourse(allCourses);
+		// setCourse(allCourses);
 	};
 
 	useEffect(() => {
