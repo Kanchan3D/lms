@@ -63,7 +63,7 @@ export const stripeWebhooks=async(request,response)=>{
         response.status(400).send(`Webhook ERror :${err.message}`)
     }
     switch (event.type) {
-        case 'payment_payment_intent.succeeded':{
+        case 'payment_intent.succeeded':{
             const paymentIntent=event.data.object;
             const paymentIntentId=paymentIntent.id;
             const session=await stripeInstance.checkout.sessions.list({
